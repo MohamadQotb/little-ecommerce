@@ -27,8 +27,8 @@ Route::middleware([
 });
 Route::middleware(['auth', 'isAdmin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminDashboardController::class, 'index'])->name('dashboard');
-    Route::resource('categories', AdminCategoryController::class);
-    Route::resource('products', AdminProductController::class);
-    Route::resource('users', AdminUserController::class);
-    Route::resource('orders', AdminOrderController::class);
+    Route::resource('categories', AdminCategoryController::class)->only(['index', 'store', 'destroy']);
+    Route::resource('products', AdminProductController::class)->except(['show']);
+    Route::resource('users', AdminUserController::class)->except(['show']);
+    Route::resource('orders', AdminOrderController::class)->only(['index', 'show', 'update']);
 });
