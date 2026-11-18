@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Little Store</title>
+  <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<!-- NAVBAR START: intentionally repeated in every page for the layouts lesson. -->
+<nav class="navbar navbar-expand-lg " >
+  <div class="container py-2">
+    <a class="navbar-brand" href="index.html">little store<span class="fw-normal fs-6">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link " href="orders.html">My orders</a></li>
+          <li class="nav-item"><a class="nav-link " href="profile.html">Account</a></li>
+      </ul>
+      <div class="d-flex gap-2 py-2"><a class="btn btn-outline-primary btn-sm" href="cart.html">Cart (2)</a> <a class="btn btn-primary btn-sm" href="login.html">Sign in</a></div>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+<!-- PAGE CONTENT START -->
+<main class="container py-4 py-lg-5">
+<div class="section-top"><div><p class="eyebrow mb-2">One more step</p><h1 class="h2 mb-0">Checkout</h1></div></div><div class="row g-4"><div class="col-lg-8"><div class="panel"><h2 class="h5 mb-4">Shipping information</h2><form><div class="mb-3"><label class="form-label" for="recipient_name">Full name</label><input class="form-control" id="recipient_name" name="recipient_name" type="text" value="Sara Ahmed" required></div><div class="mb-3"><label class="form-label" for="phone">Phone</label><input class="form-control" id="phone" name="phone" type="tel" value="01000000001" required></div><div class="mb-3"><label class="form-label" for="shipping_city">City</label><input class="form-control" id="shipping_city" name="shipping_city" type="text" value="Alexandria" required></div><div class="mb-3"><label class="form-label" for="shipping_address">Street address</label><input class="form-control" id="shipping_address" name="shipping_address" type="text" value="12 Example Street" required></div><p class="mb-4">Payment method: <strong>Cash on delivery</strong></p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal">Place order</button></form></div></div><div class="col-lg-4"><div class="panel"><h2 class="h5 mb-4">Order summary</h2><p class="d-flex justify-content-between"><span>Subtotal</span><span>EGP 1,780</span></p><p class="d-flex justify-content-between"><span>Shipping</span><span>EGP 50</span></p><hr><p class="d-flex justify-content-between fw-bold"><span>Total</span><span>EGP 1,830</span></p></div></div></div>
+</main>
+<!-- PAGE CONTENT END -->
+<!-- FOOTER START: intentionally repeated. -->
+<footer class="site-footer"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>Little Store · Everyday essentials.</span><span>Simple things. Thoughtfully chosen.</span></div></footer>
+<!-- FOOTER END -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title fs-5" id="demoTitle">Static preview</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body">This is a frontend template. No data was saved, deleted or submitted.</div>
+    <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it</button></div>
+  </div></div>
+</div>
+<script src="../assets/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

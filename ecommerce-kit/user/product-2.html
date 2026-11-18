@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ceramic Mug | Little Store</title>
+  <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<!-- NAVBAR START: intentionally repeated in every page for the layouts lesson. -->
+<nav class="navbar navbar-expand-lg " >
+  <div class="container py-2">
+    <a class="navbar-brand" href="index.html">little store<span class="fw-normal fs-6">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link " href="orders.html">My orders</a></li>
+          <li class="nav-item"><a class="nav-link " href="profile.html">Account</a></li>
+      </ul>
+      <div class="d-flex gap-2 py-2"><a class="btn btn-outline-primary btn-sm" href="cart.html">Cart (2)</a> <a class="btn btn-primary btn-sm" href="login.html">Sign in</a></div>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+<!-- PAGE CONTENT START -->
+<main class="container py-4 py-lg-5">
+<p class="mb-4"><a href="products.html">Shop</a> / Ceramic Mug</p><div class="row g-5"><div class="col-md-6"><img class="detail-img" src="../assets/images/mug.svg" alt="Ceramic Mug"></div><div class="col-md-6"><p class="eyebrow">Home</p><h1>Ceramic Mug</h1><p class="fs-3 price my-4">EGP 290</p><p class="muted">A practical essential with a clean design. Made to fit comfortably into your everyday routine.</p><span class="badge badge-soft mb-4">In stock · 60 available</span><form><div class="mb-3"><label class="form-label" for="quantity">Quantity</label><input class="form-control" id="quantity" name="quantity" type="number" min="1" step="1" value="1" required></div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal">Add to cart</button></form><hr class="my-4"><p class="small muted">Delivery: EGP 50 per order<br>Payment: cash on delivery</p><a href="cart.html">View sample cart →</a></div></div>
+</main>
+<!-- PAGE CONTENT END -->
+<!-- FOOTER START: intentionally repeated. -->
+<footer class="site-footer"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>Little Store · Everyday essentials.</span><span>Simple things. Thoughtfully chosen.</span></div></footer>
+<!-- FOOTER END -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title fs-5" id="demoTitle">Static preview</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body">This is a frontend template. No data was saved, deleted or submitted.</div>
+    <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it</button></div>
+  </div></div>
+</div>
+<script src="../assets/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

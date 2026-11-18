@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overview | Little Store</title>
+  <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<!-- NAVBAR START: intentionally repeated in every page for the layouts lesson. -->
+<nav class="navbar navbar-expand-lg admin-nav" data-bs-theme="dark">
+  <div class="container py-2">
+    <a class="navbar-brand" href="index.html">little store<span class="fw-normal fs-6"> / admin</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Overview</a></li>
+          <li class="nav-item"><a class="nav-link " href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link " href="categories.html">Categories</a></li>
+          <li class="nav-item"><a class="nav-link " href="users.html">Users</a></li>
+          <li class="nav-item"><a class="nav-link " href="orders.html">Orders</a></li>
+      </ul>
+      <div class="d-flex gap-2 py-2"><a class="btn btn-sm btn-light" href="../user/index.html">View store ↗</a></div>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+<!-- PAGE CONTENT START -->
+<main class="container py-4 py-lg-5">
+<div class="section-top"><div><p class="eyebrow mb-2">Store management</p><h1 class="h2 mb-0">Overview</h1></div><a class="btn btn-primary" href="product-create.html">+ Add product</a></div><div class="row g-3 mb-5"><div class="col-6 col-lg-3"><div class="panel"><p class="muted mb-1">Products</p><div class="stat-number">6</div></div></div><div class="col-6 col-lg-3"><div class="panel"><p class="muted mb-1">Customers</p><div class="stat-number">3</div></div></div><div class="col-6 col-lg-3"><div class="panel"><p class="muted mb-1">Orders</p><div class="stat-number">3</div></div></div><div class="col-6 col-lg-3"><div class="panel"><p class="muted mb-1">Order value</p><div class="stat-number">EGP 3,720</div></div></div></div><div class="section-top"><div><p class="eyebrow mb-2">Latest activity</p><h1 class="h2 mb-0">Recent orders</h1></div><a href="orders.html">View all →</a></div><div class="panel"><div class="table-responsive"><table class="table align-middle"><thead><tr><th scope="col">Order</th><th scope="col">Customer</th><th scope="col">Date</th><th scope="col">Status</th><th scope="col">Total</th><th scope="col"></th></tr></thead><tbody><tr><td>#1001</td><td>Sara Ahmed</td><td>2026-11-01</td><td><span class="badge badge-warm">Pending</span></td><td>EGP 1,830</td><td><a href="order-1001.html">Details →</a></td></tr><tr><td>#1002</td><td>Omar Ali</td><td>2026-11-02</td><td><span class="badge badge-soft">Shipped</span></td><td>EGP 940</td><td><a href="order-1002.html">Details →</a></td></tr><tr><td>#1003</td><td>Sara Ahmed</td><td>2026-11-03</td><td><span class="badge badge-soft">Delivered</span></td><td>EGP 950</td><td><a href="order-1003.html">Details →</a></td></tr></tbody></table></div></div>
+</main>
+<!-- PAGE CONTENT END -->
+<!-- FOOTER START: intentionally repeated. -->
+<footer class="site-footer"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>Little Store · Everyday essentials.</span><span>Store administration</span></div></footer>
+<!-- FOOTER END -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title fs-5" id="demoTitle">Static preview</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body">This is a frontend template. No data was saved, deleted or submitted.</div>
+    <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it</button></div>
+  </div></div>
+</div>
+<script src="../assets/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

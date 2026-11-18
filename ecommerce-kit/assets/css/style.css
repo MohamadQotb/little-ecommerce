@@ -1,0 +1,240 @@
+/* Small, shared stylesheet. Every HTML page contains its own full markup. */
+:root {
+    --ink: #203c32;
+    --paper: #f6f7f3;
+    --line: #dde4dc;
+    --bs-primary: #285c48
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #24352d;
+    background: var(--paper)
+}
+
+a {
+    color: #285c48
+}
+
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid var(--line)
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 1.55rem;
+    color: var(--ink)
+}
+
+.nav-link.active {
+    font-weight: 700;
+    color: #285c48 !important
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .72rem;
+    font-weight: 700;
+    color: #547463
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: -.035em
+}
+
+.btn-primary {
+    --bs-btn-bg: #285c48;
+    --bs-btn-border-color: #285c48;
+    --bs-btn-hover-bg: #1c4434;
+    --bs-btn-hover-border-color: #1c4434;
+    --bs-btn-active-bg: #1c4434
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #285c48;
+    --bs-btn-border-color: #285c48;
+    --bs-btn-hover-bg: #285c48;
+    --bs-btn-hover-border-color: #285c48
+}
+
+.hero {
+    background: #e5eddf;
+    border-radius: 18px;
+    padding: 42px
+}
+
+.hero img {
+    max-height: 310px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 14px
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.05
+}
+
+.card {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.card-img-top {
+    aspect-ratio: 8/7;
+    object-fit: cover
+}
+
+.product-card:hover {
+    border-color: #7d9e8b
+}
+
+.price {
+    font-weight: 700;
+    color: var(--ink)
+}
+
+.muted {
+    color: #68776d
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px
+}
+
+.table {
+    --bs-table-bg: transparent
+}
+
+.table th {
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: #657369;
+    letter-spacing: .5px;
+    white-space: nowrap
+}
+
+.table td {
+    vertical-align: middle;
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+.thumb {
+    width: 52px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px
+}
+
+.badge-soft {
+    background: #e6efdf;
+    color: #3b633d
+}
+
+.badge-warm {
+    background: #fff0d4;
+    color: #7c581d
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px
+}
+
+.admin-nav {
+    background: #203c32
+}
+
+.admin-nav .navbar-brand,
+.admin-nav .nav-link {
+    color: #fff
+}
+
+.admin-nav .nav-link.active {
+    color: #d7eab5 !important
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700
+}
+
+.site-footer {
+    border-top: 1px solid var(--line);
+    color: #68776d;
+    margin-top: 60px;
+    padding: 24px 0;
+    font-size: .875rem
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: .9rem
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #7e9c89;
+    box-shadow: 0 0 0 .2rem #285c4818
+}
+
+.detail-img {
+    width: 100%;
+    border-radius: 12px
+}
+
+.form-shell {
+    max-width: 480px;
+    margin: auto
+}
+
+.demo-note {
+    font-size: .85rem;
+    color: #68776d
+}
+
+.table-responsive {
+    border-radius: 8px
+}
+
+@media(max-width:575px) {
+    .hero {
+        padding: 24px
+    }
+
+    .panel {
+        padding: 16px
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem
+    }
+
+    .badge-cool {
+        background: #e3eef6;
+        color: #275372
+    }
+
+    /* أزرق هادي لـ shipped أو processing */
+    .badge-danger {
+        background: #fbe4e4;
+        color: #822e2e
+    }
+
+    /* أحمر هادي لـ cancelled */
+}
